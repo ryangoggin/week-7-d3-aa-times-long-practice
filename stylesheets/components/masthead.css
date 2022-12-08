@@ -1,77 +1,90 @@
-/* Your code here */
-.masthead {
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-    "menu . actions"
-    ". tech ."
-    "date logo paper";
+/*!!START */
+.fa-newspaper {
+  height: 14px;
+  width: 14px;
 }
 
-.masthead__menu {
-    grid-area: menu;
-    padding: 15px 10px 15px;
+.masthead {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .masthead__actions {
-    grid-area: actions;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.masthead__technologies {
-    grid-area: tech;
-    display: flex;
-    justify-content: center;
-    border-left: 1px solid #e2e2e2;
-    border-top: 1px solid #e2e2e2;
-    border-right: 1px solid #e2e2e2;
+  display: flex;
+  grid-column-start: 3;
+  padding: 10px 0;
+  justify-content: flex-end;
 }
 
 .masthead__date {
-    grid-area: date;
-    font-size: 11px;
-    display: flex;
-    align-items: flex-end;
-    border-bottom: 1px solid #e2e2e2;
-    padding-bottom: 11px;
-    border-top: 1px solid #e2e2e2;
+  align-items: flex-end;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  display: flex;
+  font-size: 11px;
+  grid-row-start: 3;
+  padding-bottom: 11px;
+}
+
+.masthead__icon-button {
+  font-size: 11px;
+  padding: 7px 9px;
+  position: relative;
+}
+
+.masthead__icon-button:hover {
+  background-color: #f7f7f5;
 }
 
 .masthead__logo {
-    grid-area: logo;
-    text-align: center;
-    padding-top: 10px;
-    border-bottom: 1px solid #e2e2e2;
-    padding-bottom: 11px;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  padding-bottom: 11px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.masthead__menu-and-search {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .masthead__paper {
-    grid-area: paper;
-    font-size: 11px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    border-bottom: 1px solid #e2e2e2;
-    padding-bottom: 11px;
-    border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  align-items: flex-end;
+  display: flex;
+  font-size: 11px;
+  justify-content: flex-end;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  padding-bottom: 11px;
 }
 
-.masthead__buttons {
-    font-size: 11px;
-    padding: 9px 7px 9px;
-
-    display: inline-block;
+.masthead__technologies {
+  display: flex;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-content: center;
+  text-align: center;
 }
 
-.masthead__buttons:hover {
-    background-color: #f7f7f5;
+.masthead__technology {
+  margin: 0 4px;
 }
 
-span.techs {
-    text-transform: uppercase;
-    font-size: 10px;
-    color: #6f6f6f;
-    margin: 10px;
+.masthead__technology-list {
+  background-color: white;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  color: #6f6f6f;
+  font-size: 10px;
+  position: relative;
+  text-transform: uppercase;
+  top: 1px;
 }
+/*!!END */
